@@ -41,7 +41,7 @@ const emit = defineEmits(['add-note'])
 
 function submitNote() {
   // Neue Notiz aus den Eingaben erstellen
-  const note = {
+  const note: Note = {
     id: Date.now(),
     title: title.value,
     content: content.value,
